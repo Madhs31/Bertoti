@@ -4,4 +4,4 @@ In a software engineering organization, we need to be more concerned about scale
 Finally, as software engineers, we are asked to make more complex decisions with higher-stakes outcomes, often based on imprecise estimates of time and growth.
 
 ## Comentário:
-Através do texto é possível observar como engenheiros de software enfretam decisões mais complexas e arriscadas, sendo muitas vezes baseadas em hipoteses. Implicando assim que a engenharia de software requer uma visão estratégica e uma abordagem mais holística em comparação à programação, que é mais focada em tarefas específicas e imediatas.
+No texto, é ressaltado como os engenheiros de software enfrentam decisões mais complexas e arriscadas, muitas vezes baseadas em hipóteses. Isso implica que a engenharia de software requer uma visão estratégica e uma abordagem mais holística em comparação à programação, que é mais focada em tarefas específicas e imediatas.
