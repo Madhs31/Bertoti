@@ -67,4 +67,4 @@ Finally, as software engineers, we are asked to make more complex decisions with
   A complexidade adicional pode tornar a interface mais difícil de usar e entender.
 
 # Atividade 3
-<img src="/assets/img/Netinha.jpg">
+<img src="/assets/img/Netinha.jpg" height="350">
