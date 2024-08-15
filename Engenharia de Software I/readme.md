@@ -16,52 +16,52 @@ Finally, as software engineers, we are asked to make more complex decisions with
 
 ## Desempenho vs. Segurança:
 
-### Desempenho (Trade-off com Segurança):
+### ► Desempenho (Trade-off com Segurança):
 
-  #### Vantagem
+  #### • Vantagem
   Sistemas mais rápidos e responsivos.
-  #### Desvantagem
+  #### • Desvantagem
   A redução na segurança pode deixar o sistema mais vulnerável a ataques e falhas.
 
-### Segurança (Trade-off com Desempenho):
+###  ► Segurança (Trade-off com Desempenho):
 
-  #### Vantagem
+  #### • Vantagem
   Maior proteção contra ataques e brechas de segurança.
-  #### Desvantagem
+  #### • Desvantagem
   Pode haver uma redução na velocidade de resposta e na eficiência geral do sistema.
 
 ##
 
 ## Escalabilidade vs. Custo:
 
-### Escalabilidade (Trade-off com Custo):
+### ► Escalabilidade (Trade-off com Custo):
 
-  #### Vantagem
+  #### • Vantagem
   Capacidade de suportar crescimento e aumento de usuários sem necessidade de grandes reengenharias.
-  #### Desvantagem
+  #### • Desvantagem
   Arquiteturas escaláveis, como microserviços, podem ser caras para implementar e manter.
 
-### Custo (Trade-off com Escalabilidade):
+### ► Custo (Trade-off com Escalabilidade):
 
-  #### Vantagem
+  #### • Vantagem
   Soluções mais baratas reduzem os custos iniciais e de manutenção.
-  #### Desvantagem
+  #### • Desvantagem
   A capacidade de crescimento do sistema pode ser limitada e pode exigir reengenharia para escalar.
 
 ##
 
 ## Usabilidade vs. Funcionalidade:
 
-### Usabilidade (Trade-off com Funcionalidade):
+### ► Usabilidade (Trade-off com Funcionalidade):
 
-  #### Vantagem
+  #### • Vantagem
   Interface intuitiva e fácil de usar melhora a experiência do usuário e reduz a curva de aprendizado.
-  #### Desvantagem
+  #### • Desvantagem
   Pode limitar a adição de funcionalidades avançadas, tornando o sistema menos poderoso.
 
-### Funcionalidade (Trade-off com Usabilidade):
+### ► Funcionalidade (Trade-off com Usabilidade):
 
-  #### Vantagem
+  #### • Vantagem
   Maior gama de recursos e capacidades para atender necessidades específicas dos usuários.
-  #### Desvantagem
+  #### • Desvantagem
   A complexidade adicional pode tornar a interface mais difícil de usar e entender.
