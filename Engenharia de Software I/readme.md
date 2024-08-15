@@ -7,11 +7,9 @@ Finally, as software engineers, we are asked to make more complex decisions with
 No texto, é ressaltado como os engenheiros de software enfrentam decisões mais complexas e arriscadas, muitas vezes baseadas em hipóteses. Isso implica que a engenharia de software requer uma visão estratégica e uma abordagem mais holística em comparação à programação, que é mais focada em tarefas específicas e imediatas.
 
 # Aula II
-
 Within Google, we sometimes say, “Software engineering is programming integrated over time.” Programming is certainly a significant part of software engineering: after all, programming is how you generate new software in the first place. If you accept this distinction, it also becomes clear that we might need to delineate between programming tasks (development) and software engineering tasks (development, modification, maintenance). The addition of time adds an important new dimension to programming. Cubes aren’t squares, distance isn’t velocity. Software engineering isn’t programming.
 
 ## Comentário:
-
 O trecho destaca que a engenharia de software é mais ampla do que a programação. Embora a programação seja essencial para criar software, a engenharia de software inclui também o desenvolvimento, a modificação e a manutenção ao longo do tempo. Enquanto a programação foca na escrita de código, a engenharia de software considera o ciclo de vida do software e as mudanças que ele sofrerá. Assim, a engenharia de software envolve uma visão mais abrangente e temporal.
 
 # Exemplos de trade-offs com requisitos não funcionais
