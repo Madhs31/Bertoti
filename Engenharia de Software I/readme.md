@@ -16,17 +16,38 @@ O trecho destaca que a engenharia de software é mais ampla do que a programaç�
 
 # Exemplos de trade-offs com requisitos não funcionais
 
-### Desempenho vs. Segurança:
+## Desempenho vs. Segurança:
 
-#### Desempenho: Melhorar a velocidade do sistema pode exigir menos segurança.
-#### Segurança: Fortalecer a segurança pode reduzir o desempenho devido ao processamento adicional.
+### Desempenho (Trade-off com Segurança):
 
-### Escalabilidade vs. Custo:
+#### Vantagem: Sistemas mais rápidos e responsivos.
+#### Desvantagem: A redução na segurança pode deixar o sistema mais vulnerável a ataques e falhas.
 
-#### Escalabilidade: Arquiteturas que suportam crescimento podem ser caras.
-#### Custo: Soluções mais econômicas podem limitar a capacidade de expansão.
+### Segurança (Trade-off com Desempenho):
 
-### Usabilidade vs. Funcionalidade:
+#### Vantagem: Maior proteção contra ataques e brechas de segurança.
+#### Desvantagem: Pode haver uma redução na velocidade de resposta e na eficiência geral do sistema.
 
-#### Usabilidade: Interfaces intuitivas melhoram a experiência do usuário, mas podem limitar funcionalidades.
-#### Funcionalidade: Adicionar recursos pode tornar a interface mais complexa e menos amigável.
+## Escalabilidade vs. Custo:
+
+### Escalabilidade (Trade-off com Custo):
+
+#### Vantagem: Capacidade de suportar crescimento e aumento de usuários sem necessidade de grandes reengenharias.
+#### Desvantagem: Arquiteturas escaláveis, como microserviços, podem ser caras para implementar e manter.
+
+### Custo (Trade-off com Escalabilidade):
+
+#### Vantagem: Soluções mais baratas reduzem os custos iniciais e de manutenção.
+#### Desvantagem: A capacidade de crescimento do sistema pode ser limitada e pode exigir reengenharia para escalar.
+
+## Usabilidade vs. Funcionalidade:
+
+### Usabilidade (Trade-off com Funcionalidade):
+
+#### Vantagem: Interface intuitiva e fácil de usar melhora a experiência do usuário e reduz a curva de aprendizado.
+#### Desvantagem: Pode limitar a adição de funcionalidades avançadas, tornando o sistema menos poderoso.
+
+### Funcionalidade (Trade-off com Usabilidade):
+
+#### Vantagem: Maior gama de recursos e capacidades para atender necessidades específicas dos usuários.
+#### Desvantagem: A complexidade adicional pode tornar a interface mais difícil de usar e entender.
