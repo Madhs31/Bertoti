@@ -1,4 +1,4 @@
-# Aula I
+# Aula I - Atividade I
   We see three critical differences between programming and software engineering: time, scale, and the trade-offs at play. On a software engineering project, engineers need to be more concerned with the passage of time and the eventual need for change. 
 In a software engineering organization, we need to be more concerned about scale and efficiency, both for the software we produce as well as for the organization that is producing it. 
 Finally, as software engineers, we are asked to make more complex decisions with higher-stakes outcomes, often based on imprecise estimates of time and growth.
@@ -6,7 +6,7 @@ Finally, as software engineers, we are asked to make more complex decisions with
 ### Comentário:
   No texto, é ressaltado como os engenheiros de software enfrentam decisões mais complexas e arriscadas, muitas vezes baseadas em hipóteses. Isso implica que a engenharia de software requer uma visão estratégica e uma abordagem mais holística em comparação à programação, que é mais focada em tarefas específicas e imediatas.
 
-# Aula II
+# Aula II - Atividade II
   Within Google, we sometimes say, “Software engineering is programming integrated over time.” Programming is certainly a significant part of software engineering: after all, programming is how you generate new software in the first place. If you accept this distinction, it also becomes clear that we might need to delineate between programming tasks (development) and software engineering tasks (development, modification, maintenance). The addition of time adds an important new dimension to programming. Cubes aren’t squares, distance isn’t velocity. Software engineering isn’t programming.
 
 ### Comentário:
@@ -54,7 +54,7 @@ Finally, as software engineers, we are asked to make more complex decisions with
 **• Vantagem:** Maior gama de recursos e capacidades para atender necessidades específicas dos usuários.
 **• Desvantagem:** A complexidade adicional pode tornar a interface mais difícil de usar e entender.
 
-# Atividade 3
+# Atividade III
 
 ## Análise das trade-offs na arquitetura da Netflix
 
