@@ -92,6 +92,8 @@ Ferramentas como Eureka (descoberta de serviços), Zuul (roteamento) e outros co
 <br>
 **•Gerenciamento de Falhas:** Aumenta a complexidade no gerenciamento de falhas e na garantia de consistência entre os serviços.
 
+##
+
 ## 2. Disponibilidade vs. Consistência
 
 ### ► Disponibilidade:
@@ -119,6 +121,8 @@ Para garantir alta disponibilidade, a Netflix pode optar por consistência event
 ➥ **Desvantagens:**
 <br>
 **•Desafios de Sincronização:** Pode complicar a lógica de aplicação e a garantia de que todos os serviços estão operando com dados atualizados.
+
+##
 
 ## 3. Desempenho vs. Custo
 
@@ -152,6 +156,8 @@ A Netflix utiliza serviços em nuvem, como AWS, para gerenciar a escalabilidade 
 <br>
 **•Gerenciamento:** A gestão de recursos em nuvem pode ser complexa e exigir estratégias eficazes de controle de custos.
 
+##
+
 ## 4. Segurança vs. Usabilidade
 
 ### ► Segurança:
@@ -183,6 +189,8 @@ Netflix foca em proporcionar uma experiência de usuário fluida e intuitiva.
 **•Compromissos de Segurança:** Pode ser necessário fazer concessões na segurança para manter a usabilidade.
 <br>
 **•Risco de Fraudes:** Menos segurança pode aumentar o risco de fraudes e acessos não autorizados.
+
+##
 
 ## 5. Desenvolvimento Rápido vs. Estabilidade
 
