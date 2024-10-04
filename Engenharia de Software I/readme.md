@@ -58,7 +58,7 @@ Finally, as software engineers, we are asked to make more complex decisions with
 
 ## Análise das trade-offs na arquitetura da Netflix
 
-<img src="/assets/img/Netinha.jpg" height="550">
+<img src="/assets/img/Netinha.jpg" height="550" >
 
 ## 1. Escalabilidade vs. Complexidade
    
