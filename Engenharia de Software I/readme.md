@@ -223,3 +223,16 @@ A Netflix investe em práticas rigorosas de testes e monitoramento para manter a
 **•Velocidade de Implementação:** Pode desacelerar a capacidade de lançar novos recursos e atualizações rapidamente.
 <br>
 **•Custo Adicional:** Exige investimento em ferramentas e práticas para garantir a estabilidade.
+
+# Atividade IV
+
+> **Atividade:** Fazer classes UML ao lado de código java mostrando a relação entre eles como fizemos no quadro
+
+Diagrama de classes UML: Sistema de Gerenciamento de Loja 
+
+ <img align="center" src="DiagramaUML/UML class.png">
+
+ Acesso ao código Java:
+ <a href=""> Clique Aqui! </a>
+ 
+
