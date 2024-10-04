@@ -230,7 +230,7 @@ A Netflix investe em práticas rigorosas de testes e monitoramento para manter a
 
 Diagrama de classes UML: Sistema de Gerenciamento de Loja 
 
- <img align="center" src="Atividade4/DiagramaUML/UML class.png">
+ <img align="center" src="Atividade4/DiagramaUML/UML class.jpg">
 
  Acesso ao código Java:
  <a href=""> Clique Aqui! </a>
