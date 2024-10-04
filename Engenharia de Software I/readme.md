@@ -233,6 +233,6 @@ Diagrama de classes UML: Sistema de Gerenciamento de Loja
  <img align="center" src="/assets/img/UML-class.jpg">
 
  Acesso ao código Java:
- <a href=""> Clique Aqui! </a>
+ <a href="https://github.com/Madhs31/Bertoti/tree/ce4222b56b32b6337b09e8bfc199ab989bc79073/Engenharia%20de%20Software%20I/DiagramaUml/LojaBertoti"> Clique Aqui! </a>
  
 
