@@ -1,4 +1,57 @@
-    
+# Observer Pattern - Exemplo em Java
+
+O Observer é usado para desacoplar a fonte de eventos (Subject) dos seus consumidores (Observers).  
+Cada Observer se registra no Subject, e este notifica todos quando seu estado muda.
+
+## UML
+
+                ┌──────────────────────────────────┐
+                │            <<interface>>         │
+                │               Usuario            │
+                ├──────────────────────────────────┤
+                │ + atualizar(tituloLivro: String) │
+                └───────────────┬──────────────────┘
+                                │
+                                │ implements
+                                ▼
+                ┌──────────────────────────────────┐
+                │           UsuarioConcreto        │
+                ├──────────────────────────────────┤
+                │ - nome: String                   │
+                ├──────────────────────────────────┤
+                │ + atualizar(tituloLivro: String) │
+                └──────────────────────────────────┘
+
+
+                ┌────────────────────────────────┐
+                │         <<interface>>          │
+                │          LivroSubject          │
+                ├────────────────────────────────┤
+                │ + registrarUsuario(u: Usuario) │
+                │ + removerUsuario(u: Usuario)   │
+                │ + notificarUsuarios()          │
+                └───────────────┬────────────────┘
+                                │
+                                │ implements
+                                ▼
+                ┌───────────────────────────────────────┐
+                │                 Livro                 │
+                ├───────────────────────────────────────┤
+                │ - titulo: String                      │
+                │ - disponivel: boolean                 │
+                │ - usuariosInteressados: List<Usuario> │
+                ├───────────────────────────────────────┤
+                │ + getTitulo(): String                 │
+                │ + isDisponivel(): boolean             │
+                │ + emprestar(): void                   │
+                │ + devolver(): void                    │
+                │ + registrarUsuario(u: Usuario)        │
+                │ + removerUsuario(u: Usuario)          │
+                │ + notificarUsuarios(): void           │
+                └───────────────────────────────────────┘
+
+## Código
+
     // ===================== OBSERVER =====================
     interface Usuario {
         void atualizar(String tituloLivro);
@@ -33,15 +86,15 @@
     public void emprestar() {
         if (disponivel) {
             disponivel = false;
-            System.out.println("📚 O livro '" + titulo + "' foi emprestado.");
+            System.out.println(" O livro '" + titulo + "' foi emprestado.");
         } else {
-            System.out.println("❌ O livro '" + titulo + "' não está disponível.");
+            System.out.println(" O livro '" + titulo + "' não está disponível.");
         }
     }
 
     public void devolver() {
         disponivel = true;
-        System.out.println("✅ O livro '" + titulo + "' foi devolvido.");
+        System.out.println(" O livro '" + titulo + "' foi devolvido.");
         notificarUsuarios();
     }
 
@@ -73,7 +126,7 @@
 
     @Override
     public void atualizar(String tituloLivro) {
-        System.out.println("📢 " + nome + ", o livro '" + tituloLivro + "' está disponível para empréstimo!");
+        System.out.println(" + nome + ", o livro '" + tituloLivro + "' está disponível para empréstimo!");
     }
     }
     
