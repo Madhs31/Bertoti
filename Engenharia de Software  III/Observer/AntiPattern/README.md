@@ -1,4 +1,50 @@
-    
+# Observer Anti-Pattern - Exemplo em Java
+
+Este exemplo mostra um anti-pattern: o Subject conhece detalhes das classes concretas e usa `instanceof` para chamar métodos diferentes.  
+Isso viola o princípio do aberto/fechado (OCP) e gera forte acoplamento.
+
+## UML
+                    ┌───────────────────────────────────────┐
+                    │         GerenciadorDeBiblioteca       │
+                    ├───────────────────────────────────────┤
+                    │ - livros: List<Livro>                 │
+                    │ - usuarios: List<Usuario>             │
+                    ├───────────────────────────────────────┤
+                    │ + adicionarLivro(l: Livro)            │
+                    │ + adicionarUsuario(u: Usuario)        │
+                    │ + emprestarLivro(l: Livro, u: Usuario)│
+                    │ - notificarTodos(msg: String)         │
+                    └───────────────┬───────────────────────┘
+                                    │
+                Notifica todos      │
+                (sem filtro)        │
+                                    ▼
+                    ┌──────────────────────────────────┐
+                    │             Usuario              │
+                    ├──────────────────────────────────┤
+                    │ - nome: String                   │
+                    ├──────────────────────────────────┤
+                    │ + getNome(): String              │
+                    │ + receberNotificacao(msg: String)│
+                    └──────────────────────────────────┘
+                                    ▲
+                                    │
+                Empresta livro      │
+                                    │
+                    ┌──────────────────────────────┐
+                    │            Livro             │
+                    ├──────────────────────────────┤
+                    │ - titulo: String             │
+                    │ - disponivel: boolean        │
+                    ├──────────────────────────────┤
+                    │ + getTitulo(): String        │
+                    │ + isDisponivel(): boolean    │
+                    │ + setDisponivel(b: boolean)  │
+                    └──────────────────────────────┘
+
+## Código
+
+```java
     // CLASSE CENTRALIZADORA (Antipadrão)
     class GerenciadorDeBiblioteca {
         private List<Livro> livros = new ArrayList<>();
