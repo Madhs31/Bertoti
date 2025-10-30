@@ -1,4 +1,58 @@
+# Strategy Pattern
+
+O **Strategy Pattern** é um padrão de projeto comportamental que define uma família de algoritmos, encapsula cada um deles e os torna intercambiáveis. Isso permite alterar o comportamento de um objeto em tempo de execução sem modificar sua estrutura.
+
+## Estrutura do padrão
+
+- **Interface Strategy**: define o método que todas as estratégias devem implementar.  
+- **Concrete Strategies**: implementam diferentes algoritmos.  
+- **Context**: utiliza a Strategy e pode alterar sua implementação dinamicamente.
+
+## UML
+
+                     ┌────────────────────────────┐
+                     │     ServicoBiblioteca      │
+                     ├────────────────────────────┤
+                     │ + executar(                │
+                     │     biblioteca: Biblioteca,│
+                     │     diasAtraso: int        │
+                     │   ): double                │
+                     └─────────────┬──────────────┘
+                                   │
+               ┌───────────────────┼───────────────────┐
+               │                   │                   │
+               ▼                   ▼                   ▼
+     ┌─────────────────────┐ ┌────────────────────┐ ┌─────────────────────┐
+     │     Emprestimo      │ │     Devolucao      │ │       Multa         │
+     ├─────────────────────┤ ├────────────────────┤ ├─────────────────────┤
+     │ + executar(         │ │ + executar(        │ │ + executar(         │
+     │   biblioteca:       │ │   biblioteca:      │ │   biblioteca:       │
+     │   Biblioteca,       │ │   Biblioteca,      │ │   Biblioteca,       │
+     │   diasAtraso: int   │ │   diasAtraso: int  │ │   diasAtraso: int   │
+     │ ): double           │ │ ): double          │ │ ): double           │
+     └─────────────────────┘ └────────────────────┘ └─────────────────────┘
     
+    
+                          ┌───────────────────────────────────┐
+                          │        Biblioteca                 │
+                          ├───────────────────────────────────┤
+                          │ - livrosDisponiveis: int          │
+                          │ - estrategiaServico:              │
+                          │     ServicoBiblioteca             │
+                          ├───────────────────────────────────┤
+                          │ + getLivrosDisponiveis(): int     │
+                          │ + setLivrosDisponiveis(int): void │
+                          │ + setEstrategiaServico(           │
+                          │     s: ServicoBiblioteca          │
+                          │   ): void                         │
+                          │ + executarServico(                │
+                          │     diasAtraso: int               │
+                          │   ): double                       │
+                          └───────────────────────────────────┘
+
+## Código
+
+```java
     // Strategy Interface
     public interface ServicoBiblioteca {
         double executar(Biblioteca biblioteca, int diasAtraso);
