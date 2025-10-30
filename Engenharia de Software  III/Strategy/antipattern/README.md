@@ -1,4 +1,45 @@
-    
+# Anti-Pattern: Strategy Implementado com Herança
+
+O anti-pattern de **Strategy via herança** ocorre quando, ao invés de usar composição para definir comportamentos intercambiáveis, tentamos resolver tudo estendendo classes. Isso leva a um código rígido e difícil de manter.
+
+## Código
+
+                    ┌──────────────────────────┐
+                    │       TipoServico        │
+                    ├──────────────────────────┤
+                    │ <<enumeration>>          │
+                    ├──────────────────────────┤
+                    │ + EMPRESTIMO             │
+                    │ + DEVOLUCAO              │
+                    │ + MULTA                  │
+                    └──────────────────────────┘
+
+
+                    ┌───────────────────────────┐
+                    │        Biblioteca         │
+                    ├───────────────────────────┤
+                    │ - livrosDisponiveis: int  │
+                    ├───────────────────────────┤
+                    │ + Biblioteca(livros: int) │
+                    │ + realizarServico(        │
+                    │     tipo: TipoServico,    │
+                    │     diasAtraso: int       │
+                    │   ): double               │
+                    └───────────────────────────┘
+                              ▲
+                              │ usa
+                              │
+                              ▼
+                    ┌──────────────────────────────┐
+                    │       SistemaBiblioteca      │
+                    ├──────────────────────────────┤
+                    │ + main(args: String[]): void │
+                    └──────────────────────────────┘
+
+
+## Código
+
+```java    
     // Enum para tipo de serviço na biblioteca
     public enum TipoServico {
         EMPRESTIMO,
