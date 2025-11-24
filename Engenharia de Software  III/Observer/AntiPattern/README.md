@@ -76,8 +76,6 @@ Isso viola o princípio do aberto/fechado (OCP) e gera forte acoplamento.
         }
     }
 
-    // E se um usuário quiser receber apenas notificações de um gênero ou autor?
-    // Não há como — todos recebem tudo (exemplo clássico do antipadrão).
     }
     
     // CLASSE DE DOMÍNIO
