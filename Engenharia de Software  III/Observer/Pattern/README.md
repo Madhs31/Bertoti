@@ -4,51 +4,8 @@ O Observer é usado para desacoplar a fonte de eventos (Subject) dos seus consum
 Cada Observer se registra no Subject, e este notifica todos quando seu estado muda.
 
 ## UML
-
-                ┌──────────────────────────────────┐
-                │            <<interface>>         │
-                │               Usuario            │
-                ├──────────────────────────────────┤
-                │ + atualizar(tituloLivro: String) │
-                └───────────────┬──────────────────┘
-                                │
-                                │ implements
-                                ▼
-                ┌──────────────────────────────────┐
-                │           UsuarioConcreto        │
-                ├──────────────────────────────────┤
-                │ - nome: String                   │
-                ├──────────────────────────────────┤
-                │ + atualizar(tituloLivro: String) │
-                └──────────────────────────────────┘
-
-
-                ┌────────────────────────────────┐
-                │         <<interface>>          │
-                │          LivroSubject          │
-                ├────────────────────────────────┤
-                │ + registrarUsuario(u: Usuario) │
-                │ + removerUsuario(u: Usuario)   │
-                │ + notificarUsuarios()          │
-                └───────────────┬────────────────┘
-                                │
-                                │ implements
-                                ▼
-                ┌───────────────────────────────────────┐
-                │                 Livro                 │
-                ├───────────────────────────────────────┤
-                │ - titulo: String                      │
-                │ - disponivel: boolean                 │
-                │ - usuariosInteressados: List<Usuario> │
-                ├───────────────────────────────────────┤
-                │ + getTitulo(): String                 │
-                │ + isDisponivel(): boolean             │
-                │ + emprestar(): void                   │
-                │ + devolver(): void                    │
-                │ + registrarUsuario(u: Usuario)        │
-                │ + removerUsuario(u: Usuario)          │
-                │ + notificarUsuarios(): void           │
-                └───────────────────────────────────────┘
+## UML
+![UML Observer Pattern](image.png)
 
 ## Código
 
