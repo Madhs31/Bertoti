@@ -10,45 +10,7 @@ O **Strategy Pattern** é um padrão de projeto comportamental que define uma fa
 
 ## UML
 
-                     ┌────────────────────────────┐
-                     │     ServicoBiblioteca      │
-                     ├────────────────────────────┤
-                     │ + executar(                │
-                     │     biblioteca: Biblioteca,│
-                     │     diasAtraso: int        │
-                     │   ): double                │
-                     └─────────────┬──────────────┘
-                                   │
-               ┌───────────────────┼───────────────────┐
-               │                   │                   │
-               ▼                   ▼                   ▼
-     ┌─────────────────────┐ ┌────────────────────┐ ┌─────────────────────┐
-     │     Emprestimo      │ │     Devolucao      │ │       Multa         │
-     ├─────────────────────┤ ├────────────────────┤ ├─────────────────────┤
-     │ + executar(         │ │ + executar(        │ │ + executar(         │
-     │   biblioteca:       │ │   biblioteca:      │ │   biblioteca:       │
-     │   Biblioteca,       │ │   Biblioteca,      │ │   Biblioteca,       │
-     │   diasAtraso: int   │ │   diasAtraso: int  │ │   diasAtraso: int   │
-     │ ): double           │ │ ): double          │ │ ): double           │
-     └─────────────────────┘ └────────────────────┘ └─────────────────────┘
-    
-    
-                          ┌───────────────────────────────────┐
-                          │        Biblioteca                 │
-                          ├───────────────────────────────────┤
-                          │ - livrosDisponiveis: int          │
-                          │ - estrategiaServico:              │
-                          │     ServicoBiblioteca             │
-                          ├───────────────────────────────────┤
-                          │ + getLivrosDisponiveis(): int     │
-                          │ + setLivrosDisponiveis(int): void │
-                          │ + setEstrategiaServico(           │
-                          │     s: ServicoBiblioteca          │
-                          │   ): void                         │
-                          │ + executarServico(                │
-                          │     diasAtraso: int               │
-                          │   ): double                       │
-                          └───────────────────────────────────┘
+![UML Strategy Pattern](image.png)
 
 ## Código
 
